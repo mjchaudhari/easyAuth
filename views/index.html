@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app = "app">
+<head>
+	<title>EasyAuth</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <script src="https://code.angularjs.org/1.4.0-beta.4/angular.js" data-semver="1.4.0-beta.4" data-require="angular.js@*"></script>
+    <script src="https://code.angularjs.org/1.4.0-beta.4/angular-route.js" data-semver="1.4.0-beta.4" data-require="angular-route@*"></script>
+	<!--<script type="text/javascript" src="./../js/angular.min.js"></script>-->
+	<script type="text/javascript" src="./app.js"></script>
+	<script type="text/javascript" src="./index.controller.js"></script>
+	<script type="text/javascript" src="./profile.controller.js"></script>
+	<style>
+		body { padding-top:80px; }
+	</style>
+</head>
+<body>
+<div class="container" ng-controller="indexCtrl">
+
+	<div class="jumbotron text-center">
+		<h1><span class="fa fa-lock"></span>{{title}} </h1>
+		
+	</div>
+
+	<div class="text-center" ng-view>
+		
+	</div>
+
+</div>
+</body>
+</html>
